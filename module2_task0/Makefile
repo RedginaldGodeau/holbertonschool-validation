@@ -1,0 +1,12 @@
+build:
+	go mod init github.com/RedginaldGodeau/awesome-api
+	go build
+run:
+	./awesome-api >./awesome-api.log 2>&1 &
+stop:
+	kill "$(pgrep awesome-api)"
+clean:
+	rm -f ./awesome-api ./awesome-api.log
+test:
+	curl http://localhost:9999/health
+
