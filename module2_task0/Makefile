@@ -6,7 +6,7 @@ build: ## Build Go App
 run: ## Run Go App
 	-./awesome-api >./awesome-api.log 2>&1 &
 stop: ## Stop Go App
-	kill "©$pgrep awesome-api)"
+	kill "©(pgrep awesome-api)"
 clean: # Clean Go App
 	-make stop
 	-rm -rf ./awesome-api ./awesome-api.log
