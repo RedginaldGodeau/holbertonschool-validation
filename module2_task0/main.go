@@ -40,3 +40,4 @@ func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 
   // End of the function: return HTTP 200 by default
 }
+
