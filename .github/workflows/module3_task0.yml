@@ -1,14 +1,27 @@
 ---
 
 name: module3_task0
-"on": push
+"on":
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '3 * * *'
 
 jobs:
   release:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
-      - run: apt-get go hugo make -yq
-      - run: make build
+      - name: Check Actions
+        uses:
+          actions/checkout@v2
+
+      - name: Install Package
+        run:
+          apt-get go hugo make -yq
+
+      - name: Run Project
+        run:
+          make build
 
 ---
