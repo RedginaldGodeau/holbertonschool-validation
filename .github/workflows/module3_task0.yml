@@ -2,6 +2,7 @@
 
 name: module3_task0
 "on":
+  push:
   schedule:
     - cron: '30 3 * * *'
 
@@ -13,12 +14,12 @@ jobs:
         uses:
           actions/checkout@v2
 
-      - name: Install Package
-        run:
-          apt-get go hugo make -yq
+# - name: Install Package
+#  run:
+#    apt-get go hugo make -yq
 
-      - name: Run Project
-        run:
-          make build
+# - name: Run Project
+#  run:
+#    make build
 
 ---
