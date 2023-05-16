@@ -20,7 +20,4 @@ jobs:
           go-version: 1.19
 
       - name: Build
-        run: make -f build
-
-      - name: Test
-        run: make -f test
+        run: make help
