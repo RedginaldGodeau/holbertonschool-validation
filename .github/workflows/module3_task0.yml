@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Check Actions
         uses:
-          actions/checkout@v2
-
+          actions/checkout@master
+      
 # - name: Install Package
 #  run:
 #    apt-get go hugo make -yq
