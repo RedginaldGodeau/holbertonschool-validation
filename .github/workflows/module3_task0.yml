@@ -20,4 +20,4 @@ jobs:
           go-version: 1.19
 
       - name: Help
-        run: make -f help
+        run: make help
