@@ -18,8 +18,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Workflow
-        run: cd module3_task1 && ./setup.sh
-
       - name: Build Workflow
-        run: cd module3_task1 && make build
+        run: cd module3_task1 && ./setup.sh && make build
