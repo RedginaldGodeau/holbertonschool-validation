@@ -24,9 +24,9 @@ jobs:
       - name: markdownlint-cli
         uses: nosborn/github-action-markdown-cli@v3.3.0
         with:
-          files: .
+          files: ./module3_task1/
           dot: true
-          ignore_path: module3_task1/themes/
+          ignore_path: ./module3_task1/themes/
 
       - name: html5validator
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0  
