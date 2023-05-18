@@ -18,5 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Select Path
+        run: cd module3_task1
+
+      - name: Install Dependancy
+        run: ./setup.sh
+
       - name: Build Workflow
-        run: cd module3_task1 && ./setup.sh && make build
+        run: make build
