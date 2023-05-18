@@ -26,7 +26,6 @@ jobs:
         with:
           files: ./module3_task1/*.md
           dot: true
-          ignore_files: ./module3_task1/themes/*
           ignore_path: ./module3_task1/themes/
 
       - name: html5validator
