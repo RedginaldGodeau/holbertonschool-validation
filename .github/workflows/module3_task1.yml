@@ -12,7 +12,7 @@ name: module3_task1
 
 jobs:
   build:
-    permissions: read-all|write-all
+    permissions: write-all
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
