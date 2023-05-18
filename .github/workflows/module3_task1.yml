@@ -25,6 +25,7 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.3.0
         with:
           files: .
+          ignore_files: *.md
           dot: true
 
       - name: html5validator
